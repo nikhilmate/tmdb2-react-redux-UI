@@ -1,0 +1,16 @@
+.footer {
+  background: 
+  linear-gradient(360deg, black, rgba(0, 0, 0, 0.1));
+  
+}
+.footer .container {
+  padding-top: 100px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-info p {
+  font-size: 20px;
+  color: white;
+}

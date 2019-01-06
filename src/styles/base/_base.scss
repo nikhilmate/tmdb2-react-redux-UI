@@ -1,0 +1,47 @@
+html {
+	font-size: 14px;
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	color: white;
+	background: url(/images/bg.png) fixed no-repeat;
+	background-size: cover;
+	font-family: Consolas;
+	letter-spacing: 1px;
+	font-weight: 500;
+}
+button {
+	cursor: pointer;
+}
+button:disabled {
+	cursor: default;
+}
+.container {
+	width: 89%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.col-6 {
+  width: 50%;
+}
+.col-5 {
+	width: 40%;
+}
+.col-7 {
+	width: 60%;
+}
+/*
+.col-8 {
+  width: 66.7%;
+}
+.col-4 {
+  width: 33.3%;
+}
+*/
+h1, h2, h3, span, p, a, button {
+	text-shadow: 1px 1px 3px #000000;
+}

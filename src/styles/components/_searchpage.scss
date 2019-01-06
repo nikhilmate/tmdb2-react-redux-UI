@@ -1,0 +1,52 @@
+.tabbar {
+  background: black;
+  color: white;
+}
+.tabbar ul {
+  list-style: none;
+  margin: 0;
+	padding: 0;
+}
+ul li {
+  display: inline-flex;
+}
+.tabbar ul li a {
+  padding: 6px 25px;
+	display: inline-block;
+	line-height: 1.42857143;
+	color: #ccc;
+	font-weight: 300;
+	text-decoration: none;
+	transition: all .3s ease-in-out;
+	border: 2px solid transparent;
+}
+.tabbar ul li.active a, .tabbar ul li a:hover {
+  color: #fff;
+  font-weight: 500;
+  border-bottom: 2px solid white;
+}
+.tab-content{
+  margin-top: 30px;
+}
+.tab-content .tab-pane {
+  display: none;
+}
+.tab-content .active {
+  display: block;
+}
+.fade {
+  animation: fade-in;
+  animation-direction: .5s;
+}
+@keyframes fade-in {
+  from {opacity: 1; display: block;}
+  to {opacity: 0; display: none;}
+} 
+.in {
+  animation: fade-out;
+  animation-direction: .5s;
+}
+@keyframes fade-out {
+  from {opacity: 0; display: none;}
+  to {opacity: 1; display: block;}
+} 

@@ -1,0 +1,134 @@
+.header.static {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(180deg, black, rgba(0, 0, 0, 0.1));
+}
+.header {
+  position: relative;
+  background: none;
+  transition: all .5s ease;
+}
+.header.static .container {  
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 89%;
+}
+
+.header .container {  
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logo {
+  width: 30%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+.logo h1 {
+  font-size: 48px;
+  margin: auto 0;
+  color: yellow;
+  letter-spacing: 1px;
+  transition: .3s all ease;
+}
+.logo h1:hover {
+  cursor: pointer;
+}
+.logo span:hover {
+  cursor: pointer;
+}
+.logo:hover h1 {
+  color: rgb(199, 5, 5);
+}
+.logo:hover span {
+  color: yellow;
+  letter-spacing: 1px;
+}
+.logo span{
+  color: rgb(199, 5, 5);
+  font-size: 24px;
+}
+.nav {
+  width: 70%;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+.navbar ul li {
+  margin-left: 20px;
+}
+.navbar ul li a{
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(216, 214, 214);
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all .3s ease;
+}
+.navbar ul li.active a{
+  border-bottom: 3px solid #ff0000;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+.navbar ul li a:hover {
+  color: rgb(243, 61, 61);
+}
+
+@media all and (max-width: 500px) {
+  .header .container {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header.static .container {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar ul li {
+    margin-right : 20px;
+  }
+  .navbar ul li:first-child {
+    margin-left : 0;
+  }
+  .navbar ul li:last-child {
+    margin-right : 0;
+  }
+  .logo h1 {
+    font-size: 36px;
+  }
+  .navbar ul li a{
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,147 @@
+.jumbotron .first.container {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.padder {
+  padding: 15px;
+}
+img.tmbi-pic {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 
+    5px 5px 20px 3px rgb(53, 52, 52);
+}
+
+/*
+h1.title {
+  font-size: 48px;
+}
+h3.intro {
+  font-size: 21px;
+  padding-bottom: 20px;
+}
+.col-5.minmax {
+  min-height: 115px;
+  max-height: 220px;
+}
+p.label {
+  font-size: 21px;
+  color: rgb(214, 205, 205);
+  font-weight: bold;
+}
+span.keyload {
+  font-size: 22px;
+  color: rgb(243, 62, 62);
+  font-weight: bold;
+  transition: .3s all ease;
+}
+.second.container {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+.second.container .col-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col-3 button {
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.6);
+  width: 190px;
+  background: transparent;
+  border: 3px solid white;
+  padding: 10px 20px;
+  border-radius: 40px;
+  font-size: 20px;
+  color: white;
+  white-space: nowrap;
+  transition: all .3s ease;
+}
+.col-3 button:hover {
+  color: rgb(0, 0, 0);
+  background: white;
+  transform: translateY(-6px);
+}
+
+@media all and (max-width: 1000px) {
+  h1.title {
+    font-size: 40px;
+  }
+  h3.intro {
+    font-size: 18px;
+  }
+  p.label {
+    font-size: 18px;
+  }
+  span.keyload {
+    font-size: 19px;
+  }
+}
+*/
+@media all and (max-width: 860px) {
+  .jumbotron .first.container {
+    padding-top: 50px; 
+    display: block;
+  }
+  /*h1.title {
+    margin: 0;
+  }*/
+  .jumbotron .col-5, .jumbotron .col-7 {
+    width: 100%;
+  }
+  .jumbotron .col-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  img.tmbi-pic {
+    margin: auto;
+    max-width: 600px;
+  }  
+  .jumbotron .col-7 {
+    margin-top: 50px;
+  }
+  /*
+  .col-3 button {
+    width: 150px;
+    background: transparent;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 40px;
+    font-size: 18px;
+    color: white;
+    white-space: nowrap;
+  }
+  */
+}
+@media all and (max-width: 720px) {
+  img.tmbi-pic {
+    max-width: 90%;
+  }
+  /*
+  h1.title {
+    font-size: 32px;
+  }
+  h3.intro {
+    font-size: 16px;
+  }
+  p.label {
+    font-size: 16px;
+  }
+  span.keyload {
+    font-size: 18px;
+  }
+  
+  .second.container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  */
+}
+
+

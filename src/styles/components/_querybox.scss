@@ -1,0 +1,126 @@
+.querybox {
+	padding-top: 50px;
+}
+.c1 {
+	width: auto;
+}
+.querybox .container {
+	background: white;
+}
+.search-tag {
+	position: absolute;
+	margin-top: -20px;
+	background: tomato;
+	color: white;
+	padding: 2px 5px;
+	font-style: italic;
+}
+.c1 input {
+	background: rgba(255, 255, 255, 0.2);
+	width: calc(100% - 40px);
+	border: none;
+	font-size: 20px;
+	color: rgba(0, 0, 0, 0.7);
+	font-family: Verdana;
+	outline: none;
+	border-bottom: 2px solid rgba(0,0,0,0.7);
+	padding: 10px 20px;
+}
+.c1 input::placeholder {
+	font-style: italic;
+	font-weight: 600;
+	font-family: sans-serif;
+}
+.c2 {
+	padding: 0 20px;
+	padding-bottom: 30px;
+	display: inline-block;
+}
+.filter-option {
+	margin-top: 10px;
+	margin-right: 20px;
+	display: inline-block;
+}
+.filter-option span.filter-label {
+	font-family: Consolas;
+	font-weight: 700;
+	font-size: 20px;
+	height: 30px;
+	color: Black;
+}
+.filter-option select {
+	width: 100%;
+	margin-top: 5px;
+	font-size: 14px;
+	border: none;
+	border-radius: 5px;
+	background: #efc600; 
+	padding: 5px 10px;
+}
+.filter-option select option {
+	background: white;
+	font-size: 14px;
+	font-weight: 500; 
+}
+.filter-option input[name="keyword"] {
+	margin-top: 5px;
+	width: 100%;
+	padding: 5px 10px;
+	border: none;
+	font-family: Consolas;
+	background-color: rgba(0, 0, 0, 0.2);
+	color: black;
+	font-size: 14px;
+	font-weight: 500;
+	border-radius: 3px;
+}
+
+@media all and (max-width: 900px) {
+	.filter-option {
+		margin-right: 10px;
+	}
+	.c1 input {
+		width: calc(100% - 20px);
+		font-size: 16px;
+		padding: 10px;
+	}
+	.c2 {
+		padding: 10px;
+	}
+	.filter-option span.filter-label {
+		font-family: Consolas;
+		font-weight: 700;
+		font-size: 20px;
+		height: 30px;
+	}
+	.filter-option input[name="keyword"] {
+		width: 100%;
+		padding: 5px 10px;
+		border: none;
+		font-family: Consolas;
+		background-color: rgba(0, 0, 0, 0.2);
+		color: black;
+		font-size: 14px;
+		font-weight: 500;
+		border-radius: 3px;
+	}
+}
+
+@media all and (max-width: 520px) {
+	.filter-option span.filter-label {
+		font-family: Consolas;
+		font-weight: 600;
+		font-size: 16px;
+		height: 24px;
+	}
+	.filter-option select {
+		padding: 5px;
+	}
+	.filter-option input[name="keyword"] {
+		width: 90%;		
+		padding: 5px 10px;
+		font-size: 14px;
+		font-weight: 500;
+		border-radius: 3px;
+	}
+}
