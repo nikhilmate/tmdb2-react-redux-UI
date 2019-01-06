@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 //import { NavLink } from "react-router-dom";
 import Header from './Header';
 import Search from './Search';

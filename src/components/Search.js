@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 import { Button } from 'reactstrap';
 import { connect } from 'react-redux';
 import {
